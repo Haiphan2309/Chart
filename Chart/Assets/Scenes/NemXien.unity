@@ -19569,7 +19569,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "V\u1EADn t\u1ED1c ban \u0111\u1EA7u (m/s):"
+  m_Text: 'Initial velocity (m/s):'
 --- !u!222 &794614916
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20081,7 +20081,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0110\u1ED9 cao ban \u0111\u1EA7u (m): "
+  m_Text: 'Initial height (m): '
 --- !u!222 &1017579671
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20514,19 +20514,7 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnSubmit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1697462725}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
-        m_MethodName: SetAlpha0
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_OnDidEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -21321,9 +21309,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af018a2aa9a6ff14cadc6f063781fcba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textH0: {fileID: 432111357}
-  textV0: {fileID: 964456490}
-  textAlpha0: {fileID: 66796284}
+  textH0: {fileID: 1964960200}
+  textV0: {fileID: 1997287038}
+  textAlpha0: {fileID: 1425388773}
   h0: 0
   v0: 0
   alpha0: 0
@@ -21651,19 +21639,7 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnSubmit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1697462725}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
-        m_MethodName: SetH0
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_OnDidEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -21810,19 +21786,7 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnSubmit:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1697462725}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
-        m_MethodName: SetV0
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   m_OnDidEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -21946,7 +21910,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "G\xF3c h\u1EE3p b\u1EDFi ph\u01B0\u01A1ng ngang ban \u0111\u1EA7u (\u0111\u1ED9):"
+  m_Text: 'Inital angle to the horizontal (degrees):'
 --- !u!222 &2001358059
 CanvasRenderer:
   m_ObjectHideFlags: 0

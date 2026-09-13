@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Controller : MonoBehaviour
 {
-    public Text textH0,textV0, textAlpha0;
+    public InputField textH0,textV0, textAlpha0;
     public float h0, v0, alpha0;
 
     [SerializeField] SimulatePhysic simulateObj;
@@ -13,20 +11,30 @@ public class Controller : MonoBehaviour
     public ParticleSystem vfx;
     ParticleSystem vfxObj;
 
-    public void SetH0()
+    private void Start()
     {
-        h0 = float.Parse(textH0.text);
-        ResetObjPos();
+        textH0.onValueChanged.AddListener(SetH0);
+        textV0.onValueChanged.AddListener(SetV0);
+        textAlpha0.onValueChanged.AddListener(SetAlpha0);
     }
-    public void SetV0()
+
+    public void SetH0(string value)
     {
-        v0 = float.Parse(textV0.text);
+        h0 = float.Parse(value);
         ResetObjPos();
+        simulateObj.StopSimulate();
     }
-    public void SetAlpha0()
+    public void SetV0(string value)
     {
-        alpha0 = float.Parse(textAlpha0.text);
+        v0 = float.Parse(value);
         ResetObjPos();
+        simulateObj.StopSimulate();
+    }
+    public void SetAlpha0(string value)
+    {
+        alpha0 = float.Parse(value);
+        ResetObjPos();
+        simulateObj.StopSimulate();
     }
 
     void ResetObjPos()
@@ -36,7 +44,10 @@ public class Controller : MonoBehaviour
 
     public void Move()
     {
-        Destroy(vfxObj);
+        if (vfxObj)
+        {
+            Destroy(vfxObj);
+        }
         vfxObj = Instantiate(vfx, simulateObj.transform.position, Quaternion.identity);
         vfxObj.transform.SetParent(simulateObj.transform);
         ResetObjPos();

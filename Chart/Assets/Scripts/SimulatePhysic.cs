@@ -25,6 +25,14 @@ public class SimulatePhysic : MonoBehaviour
     {
         simulateCor = StartCoroutine(Cor_Simulate());
     }
+    public void StopSimulate()
+    {
+        if (simulateCor != null)
+        {
+            StopCoroutine(simulateCor);
+        }
+        simulateCor = null;
+    }
     void UpdateSimulate()
     {
         float x = 0 + v.x * (t + tx);
